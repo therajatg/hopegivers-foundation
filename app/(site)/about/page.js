@@ -89,8 +89,8 @@ const About = () => {
               on the lives of those in need. As an eligible charitable
               institution, we provide tax benefits to donors under Section 80G
               of the Income Tax Act, 1961. By donating to us, taxpayers can
-              claim deductions ranging from 50% to 100% of the donated amount,
-              helping them save on taxes while supporting our initiatives.
+              claim deduction of 50% of the donated amount, helping them save on
+              taxes while supporting our initiatives.
             </p>
             <p className="text-lg">
               Your generous contributions enable us to continue our work and

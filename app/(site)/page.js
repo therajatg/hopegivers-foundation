@@ -4,6 +4,7 @@ import bannerImage from "@/images/banner.jpeg";
 import aboutImage from "@/images/about.jpeg";
 import ourWorkImage from "@/images/ourWork.jpeg";
 import volunteerImage from "@/images/volunteer.jpeg";
+import newsImage from "@/images/news.jpeg";
 import Link from "next/link";
 import { Donate, LatestPics } from "@/components";
 import Image from "next/image";
@@ -153,22 +154,68 @@ const Home = () => {
           </div>
         </div>
       </section>
+      <section className="bg-gray-100 py-12">
+        <div className="container mx-auto">
+          <div className="max-w-4xl mx-auto">
+            <div className="flex flex-col md:flex-row">
+              <Image src={newsImage} />
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* Special day Section */}
+      <section className="py-12">
+        <div className="container mx-auto">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl font-bold text-center mb-8">
+              Celebrate your special day with us
+            </h2>
+            <div className="flex flex-col items-center">
+              <div className="p-4">
+                <iframe
+                  width="600"
+                  height="315"
+                  src="https://www.youtube.com/embed/HGiYhzzUc8E"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen
+                ></iframe>
+              </div>
+              <div className="p-4">
+                <p className="text-justify">
+                  We believe in spreading joy and love among the elderly
+                  residents of our old age home. One of the most beautiful ways
+                  you can make a difference in their lives is by sharing your
+                  special day with them. Whether it's your birthday,
+                  anniversary, or any other significant milestone, consider
+                  celebrating it at our old age home. The heartwarming moments
+                  created during these celebrations leave a lasting impact on
+                  both the residents and the guests. Imagine the smiles on the
+                  faces of our elderly residents as they join in the
+                  festivities, sharing stories, laughter, and cherished memories
+                  with you. <br />
+                  Join us in creating unforgettable memories that fill the
+                  hearts of our elderly with happiness and warmth. Your gesture
+                  of love can make a significant impact and bring immeasurable
+                  joy to those who may not have family members nearby. Make your
+                  special day even more meaningful by spreading love and
+                  kindness to those who deserve it the most. Get in touch with
+                  us today to discuss how you can be a part of these
+                  heartwarming celebrations at our old age homes.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Donation Section */}
       <section className={`bg-gray-100 py-12 ${modal && "hidden"}`}>
         <Donate />
       </section>
-      <div className="flex justify-center my-32">
-        <iframe
-          width="560"
-          height="315"
-          src="https://www.youtube.com/embed/HGiYhzzUc8E"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen
-        ></iframe>
-      </div>
-      <div className="bg-gray-100 py-12">
+      <div className="py-12">
+        <h2 className="text-3xl font-bold text-center mb-8">Latest Pics</h2>
         <LatestPics />
       </div>
     </div>
