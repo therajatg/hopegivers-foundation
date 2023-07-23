@@ -2,21 +2,6 @@ import { ContactForm } from "@/components/ContactForm";
 import { postContactForm } from "@/sanity/sanity-utils";
 
 const ContactUs = () => {
-  // async function handleContactDetails(e) {
-  //   "use server";
-  //   e.preventDefault();
-  //   const res = await postContactForm(process.env.SANITY_TOKEN);
-  //   console.log(res);
-  //   // try {
-  //   //   const res = await axios.post("/api/contacts", {
-  //   //     contactDetail,
-  //   //   });
-  //   //   setAlert(true);
-  //   //   setTimeout(() => setAlert(false), 3000);
-  //   //   setContactDetail({ name: "", number: "", email: "", message: "" });
-  //   // } catch (error) {}
-  // }
-
   return (
     <section class="mb-32 text-center">
       <div class="py-12 md:px-12">

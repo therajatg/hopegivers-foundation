@@ -12,18 +12,20 @@ const Volunteer = () => {
               Join us in our mission to make a positive impact on the lives of
               the elderly and those in need.
             </p>
-            <a
-              href="tel:9602034848"
-              className="bg-white text-blue-500 font-semibold px-8 py-3 rounded-lg mx-2 hover:bg-blue-100"
-            >
-              Call us: 9602034848
-            </a>
-            <a
-              href="mailto:hopegiversfoundation99@gmail.com"
-              className="bg-white text-blue-500 font-semibold px-8 py-3 rounded-lg mx-2 hover:bg-blue-100"
-            >
-              Email us: hopegiversfoundation99@gmail.com
-            </a>
+            <div className="flex flex-col md:flex-row justify-center items-center">
+              <a
+                href="tel:9602034848"
+                className="bg-white text-blue-500 font-semibold px-8 py-3 rounded-lg mx-2 mb-2 md:mb-0 hover:bg-blue-100"
+              >
+                Call us: 9602034848
+              </a>
+              <a
+                href="mailto:hopegiversfoundation99@gmail.com"
+                className="bg-white text-blue-500 font-semibold px-8 py-3 rounded-lg mx-2 hover:bg-blue-100"
+              >
+                Email us: hopegiversfoundation99@gmail.com
+              </a>
+            </div>
           </div>
         </div>
       </section>
@@ -32,7 +34,9 @@ const Volunteer = () => {
       <section className="bg-gray-200 py-12">
         <div className="container mx-auto">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-2xl font-bold mb-4">How to Get Involved</h2>
+            <h2 className="text-2xl font-bold mb-4 text-center">
+              How to Get Involved
+            </h2>
             <div className="flex flex-col md:flex-row">
               <div className="md:w-1/2 p-4">
                 <h3 className="text-lg font-semibold mb-2">
@@ -74,7 +78,7 @@ const Volunteer = () => {
                   Getting involved as a volunteer is easy. If you are interested
                   in volunteering with us or have any questions, please don't
                   hesitate to reach out to us. You can contact us directly by
-                  calling us at 123-456-7890 or sending an email to
+                  calling us at 9602034848 or sending an email to
                   volunteer@hopegiversfoundation.org. Our team will be happy to
                   provide you with more information, discuss the available
                   opportunities, and guide you through the process of becoming a
@@ -96,23 +100,23 @@ const Volunteer = () => {
       <section className="py-12">
         <div className="container mx-auto">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-2xl font-bold mb-4">Contact Us</h2>
-            <p className="mb-4">
+            <h2 className="text-2xl font-bold mb-4 text-center">Contact Us</h2>
+            <p className="mb-4 text-center">
               If you have any questions or require further information about
               volunteering with Hope Givers Foundation, please don't hesitate to
               contact us. We appreciate your dedication and willingness to make
               a difference in the lives of those in need.
             </p>
-            <div className="flex justify-center">
+            <div className="flex justify-center sm:flex-row flex-col">
               <a
                 href="tel:9602034848"
-                className="bg-blue-600 text-white font-semibold px-8 py-3 rounded-lg mx-2"
+                className="bg-blue-600 text-white font-semibold px-8 py-3 rounded-lg mx-2 mb-2 md:mb-0 hover:bg-blue-700"
               >
                 Call us: 9602034848
               </a>
               <a
                 href="mailto:hopegiversfoundation99@gmail.com"
-                className="bg-blue-600 text-white font-semibold px-8 py-3 rounded-lg mx-2"
+                className="bg-blue-600 text-white font-semibold px-8 py-3 rounded-lg mx-2 hover:bg-blue-700"
               >
                 Email us: hopegiversfoundation99@gmail.com
               </a>

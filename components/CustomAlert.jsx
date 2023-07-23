@@ -1,3 +1,5 @@
+"use client";
+
 export const CustomAlert = ({ type, message }) => {
   let alertClass;
   type === "error"

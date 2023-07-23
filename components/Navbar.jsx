@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { usePathname, useRouter } from "next/navigation";
 import logo from "@/images/nav-logo.png";
-import { Donate } from "./Donate";
+import { DonateModal } from "./DonateModal";
 import Link from "next/link";
 import { useModal } from "@/context/context";
 import Image from "next/image";
@@ -142,7 +142,7 @@ export const Navbar = () => {
         </>
       )}
 
-      {modal && <Donate modal={modal} setModal={setModal} />}
+      {modal && <DonateModal modal={modal} setModal={setModal} />}
     </nav>
   );
 };

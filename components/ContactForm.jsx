@@ -2,6 +2,7 @@
 
 import { postContactForm } from "@/sanity/sanity-utils";
 import { useState } from "react";
+import { CustomAlert } from "./CustomAlert";
 
 export const ContactForm = () => {
   const [contactDetail, setContactDetail] = useState({});
@@ -9,22 +10,19 @@ export const ContactForm = () => {
 
   const handleContact = async (e) => {
     e.preventDefault();
-    console.log("tid is contact form");
-    const res = await postContactForm({
-      name: contactDetail.name,
-      number: contactDetail.number,
-      email: contactDetail.email,
-      message: contactDetail.message,
-    });
-    console.log(res);
-    // try {
-    //   const res = await axios.post("/api/contacts", {
-    //     contactDetail,
-    //   });
-    //   setAlert(true);
-    //   setTimeout(() => setAlert(false), 3000);
-    //   setContactDetail({ name: "", number: "", email: "", message: "" });
-    // } catch (error) {}
+    try {
+      const res = await postContactForm({
+        name: contactDetail.name,
+        number: contactDetail.number,
+        email: contactDetail.email,
+        message: contactDetail.message,
+      });
+      setAlert(true);
+      setTimeout(() => setAlert(false), 3000);
+      setContactDetail({ name: "", number: "", email: "", message: "" });
+    } catch (error) {
+      console.log(error);
+    }
   };
 
   return (

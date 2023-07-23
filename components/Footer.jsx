@@ -1,13 +1,19 @@
 "use client";
 
 import logo from "@/images/footer-logo.png";
+import Image from "next/image";
 
 export const Footer = () => {
   return (
     <footer className="bg-gray-900 text-white py-8">
       <div className="container mx-auto flex flex-col md:flex-row justify-between items-center">
         <div className="flex flex-col items-center md:items-start max-w-2xl">
-          <img src={logo} alt="Hope Givers Foundation" className="h-12 mb-4" />
+          <Image
+            src={logo}
+            alt="Hope Givers Foundation"
+            className="mb-4"
+            height={70}
+          />
           <p className="text-sm">
             Hope Givers Foundation is a registered charitable trust based in
             Jaipur, Rajasthan. We are dedicated to empowering the weaker
