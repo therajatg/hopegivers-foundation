@@ -1,18 +1,20 @@
-import oldAgeHomeImage from "../images/oldAge.jpeg";
-import blanketsDistributionImage from "../images/blanket.jpeg";
-import medicalEquipmentsImage from "../images/medical.jpeg";
+import oldAgeHomeImage from "@/images/oldAge.jpeg";
+import blanketsDistributionImage from "@/images/blanket.jpeg";
+import medicalEquipmentsImage from "@/images/medical.jpeg";
+import Image from "next/image";
 
 const OurWork = () => {
+  console.log("token", process.env.sanity);
   return (
     <div>
       {/* Old Age Homes section */}
-      <section className="py-12">
+      <section className="py-12 bg-gray-100">
         <div className="container mx-auto">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold mb-4">Old Age Homes</h2>
             <div className="flex flex-col md:flex-row">
               <div className="md:w-1/2 p-4">
-                <img
+                <Image
                   src={oldAgeHomeImage}
                   alt="Old Age Home"
                   className="w-full h-auto mb-4"
@@ -40,7 +42,7 @@ const OurWork = () => {
       </section>
 
       {/* Blankets Distribution section */}
-      <section className="bg-gray-100 py-12">
+      <section className="py-12">
         <div className="container mx-auto">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold mb-4">Blankets Distribution</h2>
@@ -56,7 +58,7 @@ const OurWork = () => {
                 </p>
               </div>
               <div className="md:w-1/2 p-4">
-                <img
+                <Image
                   src={blanketsDistributionImage}
                   alt="Blankets Distribution"
                   className="w-full h-auto mb-4"
@@ -68,13 +70,13 @@ const OurWork = () => {
       </section>
 
       {/* Medical Equipments section */}
-      <section className="py-12">
+      <section className="py-12 bg-gray-100">
         <div className="container mx-auto">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold mb-4">Medical Equipments</h2>
             <div className="flex flex-col md:flex-row">
               <div className="md:w-1/2 p-4">
-                <img
+                <Image
                   src={medicalEquipmentsImage}
                   alt="Medical Equipments"
                   className="w-full h-auto mb-4"

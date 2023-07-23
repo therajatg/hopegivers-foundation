@@ -1,8 +1,5 @@
+import contact from "./contact-schema";
 import gallery from "./gallery-schema";
 
-const schemas = [gallery];
+const schemas = [gallery, contact];
 export default schemas;
-
-// *[_type == "gallery"]{
-//   "images": images[].asset->url
-// }

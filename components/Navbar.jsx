@@ -24,7 +24,7 @@ export const Navbar = () => {
   };
 
   return (
-    <nav className="w-full flex justify-between px-4 py-4 items-center bg-white">
+    <nav className="w-full flex justify-between px-4 py-4 items-center">
       <Image
         src={logo}
         alt="logo"

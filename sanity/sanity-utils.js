@@ -12,3 +12,17 @@ export const getImages = async () => {
     { next: { revalidate: 10 } }
   );
 };
+
+export const postContactForm = async ({ name, number, email, message }) => {
+  console.log("hahahahahah");
+  const client = createClient(clientConfig);
+  const newContact = {
+    _type: "contact",
+    name,
+    email,
+    number,
+    message,
+  };
+
+  return client.create(newContact);
+};
