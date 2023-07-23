@@ -4,7 +4,6 @@ import medicalEquipmentsImage from "@/images/medical.jpeg";
 import Image from "next/image";
 
 const OurWork = () => {
-  console.log("token", process.env.sanity);
   return (
     <div>
       {/* Old Age Homes section */}
