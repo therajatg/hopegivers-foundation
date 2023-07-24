@@ -171,15 +171,12 @@ const Home = () => {
               Celebrate your special day with us
             </h2>
             <div className="flex flex-col items-center">
-              <div className="p-4">
+              <div className="w-full flex justify-center max-w-lg">
                 <iframe
-                  width="600"
                   height="315"
                   src="https://www.youtube.com/embed/HGiYhzzUc8E"
                   title="YouTube video player"
-                  frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  allowfullscreen
+                  className="w-full"
                 ></iframe>
               </div>
               <div className="p-4">
