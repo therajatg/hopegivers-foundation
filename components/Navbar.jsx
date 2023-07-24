@@ -14,11 +14,6 @@ export const Navbar = () => {
   const pathname = usePathname();
   const router = useRouter();
 
-  const logoutHandler = () => {
-    localStorage.removeItem("token");
-    router.push("/");
-  };
-
   const toggleDropdown = () => {
     setDropdownOpen(!dropdownOpen);
   };
@@ -61,14 +56,6 @@ export const Navbar = () => {
         <Link href="/contact-us" className="hover:underline">
           CONTACT US
         </Link>
-        {pathname === "/admin" && localStorage.getItem("token") && (
-          <p
-            className="text-white focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 bg-blue-600 focus:outline-none"
-            onClick={logoutHandler}
-          >
-            LOGOUT
-          </p>
-        )}
       </div>
 
       <svg
@@ -127,17 +114,6 @@ export const Navbar = () => {
             >
               CONTACT US
             </Link>
-            {pathname === "/admin" && localStorage.getItem("token") && (
-              <p
-                className="block px-4 py-2 text-gray-800 hover:bg-gray-200"
-                onClick={() => {
-                  logoutHandler();
-                  toggleDropdown();
-                }}
-              >
-                LOGOUT
-              </p>
-            )}
           </div>
         </>
       )}
