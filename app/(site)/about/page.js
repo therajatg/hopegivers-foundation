@@ -54,24 +54,24 @@ const About = () => {
                   improving the lives of those in need.
                 </p>
               </div>
-              <div className="md:w-1/2 p-4">
-                <Image
-                  src={secretaryImage}
-                  alt="Secretary"
-                  className="rounded-full w-64 h-64 mx-auto mb-4 object-cover object-top"
-                />
+              // <div className="md:w-1/2 p-4">
+              //   <Image
+              //     src={secretaryImage}
+              //     alt="Secretary"
+              //     className="rounded-full w-64 h-64 mx-auto mb-4 object-cover object-top"
+              //   />
 
-                <h3 className="text-lg font-semibold mb-2">
-                  Secretary - Miss Diksha
-                </h3>
-                <p>
-                  Miss Diksha is a dedicated advocate for social justice and
-                  equality. With her exceptional organizational skills and
-                  passion for making a difference, she plays a crucial role in
-                  the day-to-day operations of Hope Givers Foundation and
-                  ensures its programs and initiatives are executed effectively.
-                </p>
-              </div>
+              //   <h3 className="text-lg font-semibold mb-2">
+              //     Secretary - Miss Diksha
+              //   </h3>
+              //   <p>
+              //     Miss Diksha is a dedicated advocate for social justice and
+              //     equality. With her exceptional organizational skills and
+              //     passion for making a difference, she plays a crucial role in
+              //     the day-to-day operations of Hope Givers Foundation and
+              //     ensures its programs and initiatives are executed effectively.
+              //   </p>
+              // </div>
             </div>
           </div>
         </div>
